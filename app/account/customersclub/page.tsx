@@ -54,16 +54,16 @@ function page({ searchParams }: Props) {
             </p>
           </div>
         </div>
-        <div className='flex w-1/4 items-center justify-between rounded-lg bg-gray-400 lg:w-1/3'>
+        <div className='flex w-1/4 items-center justify-between rounded-lg bg-gray-400 text-white lg:w-1/3'>
           <Link
             href='/account/customersclub?prize=hotel'
-            className={`flex h-full flex-1 items-center justify-center text-nowrap px-4 py-3 text-sm text-white ${searchParams.prize === 'hotel' && 'rounded-lg bg-white text-black'}`}
+            className={`flex h-full flex-1 items-center justify-center text-nowrap px-4 py-3 text-sm ${searchParams.prize === 'hotel' ? 'rounded-lg bg-white text-off-black' : ''}`}
           >
             جوایز هتل
           </Link>
           <Link
             href='/account/customersclub?prize=shopcenter'
-            className={`flex h-full flex-1 items-center justify-center text-nowrap px-4 py-3 text-sm text-white ${searchParams.prize === 'shopcenter' && 'rounded-lg bg-white text-black'}`}
+            className={`flex h-full flex-1 items-center justify-center text-nowrap px-4 py-3 text-sm ${searchParams.prize === 'shopcenter' && 'rounded-lg bg-white text-off-black'}`}
           >
             جوایز مرکز خرید
           </Link>
